@@ -1,0 +1,71 @@
+:root {
+    --primary-text-color: #757575;
+    --primary-bg-color: #FFFFFF;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    
+}
+h1,h2,h3,h4,h5,h6 {
+    color: var(--title-text-color);
+}
+body {
+    color: var(--primary-text-color); 
+    background-color: var(--primary-bg-color);
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    color: var(--title-text-color);
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+.nav-site-list .list-items {
+    color: var(--title-text-color);
+}
+.list-items .link:hover, 
+.list-items .link:focus {
+    color: var(--accent-color);
+}
+
+.contact-list-items {
+    color: var(--primary-text-color);
+}
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    color: var(--primary-bg-color);
+}
+
+.button {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
+
+.section-team {
+    background-color: #F5F4FA;
+}
+
+.section-footer {
+    background-color: #2F303A;
+}
+
+.section-footer .logo-studio {
+    color: var(--primary-bg-color);
+}
+
+.address {
+    color: var(--primary-bg-color);
+}
