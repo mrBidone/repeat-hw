@@ -3,23 +3,29 @@
     --primary-bg-color: #FFFFFF;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --dark-bg-color: #2F303A;
+    --dark-bg-text-color: #FFFFFF;
+    --grey-bg-color: #F5F4FA;
     
 }
-h1,h2,h3,h4,h5,h6 {
-    color: var(--title-text-color);
-}
+
 body {
     color: var(--primary-text-color); 
     background-color: var(--primary-bg-color);
 }
-
+.section-title {
+    color: var(--title-text-color);
+}
 .link {
     text-decoration: none;
-    color: inherit;
 }
 
 .list {
     list-style: none;
+}
+
+.list-title {
+    color: var(--title-text-color);
 }
 
 .logo {
@@ -29,43 +35,73 @@ body {
 .logo-web {
     color: var(--accent-color);
 }
-
-.nav-site-list .list-items {
+/* HEADER */
+.nav-list .link {
     color: var(--title-text-color);
+}
+.list-items .current {
+    color: var(--accent-color);
 }
 .list-items .link:hover, 
 .list-items .link:focus {
     color: var(--accent-color);
 }
 
-.contact-list-items {
+
+
+.contact-list .link {
     color: var(--primary-text-color);
 }
+/* HERO */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--dark-bg-color);
 }
 
 .hero-title {
-    color: var(--primary-bg-color);
+    color: var(--dark-bg-text-color);
 }
 
 .button {
-    color: var(--primary-bg-color);
+    color: var(--dark-bg-text-color);
     background-color: var(--accent-color);
 }
+/* SECTIONS */
 
+
+/* SECTION TEAM */
 .section-team {
     background-color: #F5F4FA;
 }
 
+/* FOOTER */
 .section-footer {
-    background-color: #2F303A;
+    background-color: var(--dark-bg-color);
 }
 
 .section-footer .logo-studio {
-    color: var(--primary-bg-color);
+    color: var(--dark-bg-text-color);
 }
 
 .address {
-    color: var(--primary-bg-color);
+    color: var(--dark-bg-text-color);
+}
+
+.section-footer .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-button:hover {
+    color: var(--dark-bg-text-color);
+    background-color: var(--accent-color) ;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
 }
